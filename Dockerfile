@@ -30,7 +30,7 @@ RUN pip install babypandas
 
 RUN pip install kaggle
 RUN pip install pandas
-RUN pip install pickle
+#RUN pip install pickle
 
 RUN pip install torch
 RUN pip install tensorflow
