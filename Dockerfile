@@ -16,10 +16,23 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 # 2) change to root to install packages
 USER root
 
-RUN apt-get -y install htop
+RUN	apt-get install htop
+
+RUN	apt-get install -y aria2
+RUN	apt-get install -y nmap
+RUN	apt-get install -y traceroute
 
 # 3) install packages
 RUN pip install --no-cache-dir networkx scipy python-louvain
+
+RUN pip install geopandas
+RUN pip install babypandas
+
+Run pip install kaggle
+Run pip install pandas
+
+RUN pip install torch
+RUN pip install tensorflow
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
