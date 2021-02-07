@@ -28,8 +28,9 @@ RUN pip install --no-cache-dir networkx scipy python-louvain
 RUN pip install geopandas
 RUN pip install babypandas
 
-Run pip install kaggle
-Run pip install pandas
+RUN pip install kaggle
+RUN pip install pandas
+RUN pip install pickle
 
 RUN pip install torch
 RUN pip install tensorflow
